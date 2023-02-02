@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">    
+</head>
+<body>
+    <!--#region             Header -->
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <img src="./img/Logo_Blanc.png" alt="logo"> 
+            </div>
+            <ul class="liste">
+               <li><a href="#">Acceuil</a></li>
+               <li><a href="#">Heures d'ouvertures</a></li>
+               <li><a href="#">Menus</a></li>
+               <li><a href="#">Évènements</a></li>
+               <li><a href="#">Contactez-nous</a></li>
+            </ul>
+            
+        </div>
+        <div class="toggle">
+            <div class="bar bar-1"></div>
+            <div class="bar bar-2"></div>
+            <div class="bar bar-3"></div>
+        </div>
+    </header>
+    <!-- #endregion -->
+    <!--#region             Acceuil -->
+    <section class="acceuil">
+        <div class="container">
+            <img src="/img/Logo_Blanc.png" alt="logo">
+        </div>
+    </section>
+    <!-- #endregion -->
+    <!--#region             Horaire -->
+    <section class="horaire">
+        <div class="top">
+            <img src="./img/ligne noir 1.png" alt="">
+            <h1>Horaire de la semaine</h1>
+        </div>
+        <div class="line"></div>
+        <div class="bottom">
+            <ul>
+                <li>Dimanche</li>
+                <li>Lundi</li>
+                <li>Mardi</li>
+                <li>Mercredi</li>
+                <li>Jeudi</li>
+                <li>Vendredi</li>
+                <li>Samedi</li>
+            </ul>
+            <ul>
+                <li>6H-13H</li>
+                <li>6H-20H</li>
+                <li>6H-20H</li>
+                <li>6H-20H</li>
+                <li>6H-21H</li>
+                <li>6H-21H</li>
+                <li>6H-21H</li>
+            </ul>
+        </div>
+        <div class="line"></div>
+    </section>
+    <!-- #endregion -->
+</body>
+</html>
+
+<script>
+
+    const menu = document.querySelector(".toggle");
+    const nav = document.querySelector(".nav");
+
+    menu.addEventListener("click", function(){
+        nav.classList.toggle("active");
+        menu.classList.toggle("active");
+    })
+
+
+
+    
+
+
+</script>
