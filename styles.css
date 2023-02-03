@@ -160,9 +160,12 @@ section.horaire .bottom {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 section.horaire .bottom img {
-  width: 30%;
+  width: calc(20rem + 30vw);
+  flex-shrink: 0;
 }
 section.horaire .bottom li {
   list-style: none;
@@ -331,3 +334,4 @@ section.horaire .line {
     grid-template-columns: repeat(auto-fit, minmax(min-content, max-content));
   }
 }
+/* #endregion */
