@@ -280,7 +280,10 @@ section.horaire .line {
 /*#region           Footer  */
 footer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax());
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* repeat(auto-fit, minmax(min-content, 1fr)) */
   grid-auto-rows: 1fr;
   place-items: start center;
   grid-gap: 2rem;
