@@ -325,6 +325,7 @@ section.horaire .line {
 @media screen and (max-width: 650px) {
   #nosmenu {
     padding: 17rem 0;
+    background-attachment: scroll;
   }
   .nosmenu__content--menus {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
