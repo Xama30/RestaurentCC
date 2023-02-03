@@ -1,88 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">    
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Côté-Cour</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!--#region             Header -->
     <header>
-        <div class="nav">
-            <div class="logo">
-                <img src="./img/Logo_Blanc.png" alt="logo"> 
-            </div>
-            <ul class="liste">
-               <li><a href="#">Acceuil</a></li>
-               <li><a href="#">Heures d'ouvertures</a></li>
-               <li><a href="#">Menus</a></li>
-               <li><a href="#">Évènements</a></li>
-               <li><a href="#">Contactez-nous</a></li>
-            </ul>
-            
+      <div class="nav">
+        <div class="logo">
+          <img src="./img/Logo_Blanc.png" alt="logo" />
         </div>
-        <div class="toggle">
-            <div class="bar bar-1"></div>
-            <div class="bar bar-2"></div>
-            <div class="bar bar-3"></div>
-        </div>
+        <ul class="liste">
+          <li><a href="#">Acceuil</a></li>
+          <li><a href="#">Heures d'ouvertures</a></li>
+          <li><a href="#">Menus</a></li>
+          <li><a href="#">Évènements</a></li>
+          <li><a href="#">Contactez-nous</a></li>
+        </ul>
+      </div>
+      <div class="toggle">
+        <div class="bar bar-1"></div>
+        <div class="bar bar-2"></div>
+        <div class="bar bar-3"></div>
+      </div>
     </header>
     <!-- #endregion -->
-    <!--#region             Acceuil -->
-    <section class="acceuil">
+    <main>
+      <!--#region             Acceuil -->
+      <section class="acceuil">
         <div class="container">
-            <img src="./img/Logo_Blanc.png" alt="logo">
+          <img src="./img/Logo_Blanc.png" alt="logo" />
         </div>
-    </section>
-    <!-- #endregion -->
-    <!--#region             Horaire -->
-    <section class="horaire">
+      </section>
+      <!-- #endregion -->
+      <!--#region             Horaire -->
+      <section class="horaire">
         <div class="top">
-            <img src="./img/ligne noir 1.png" alt="">
-            <h1>Horaire de la semaine</h1>
+          <img src="./img/ligne noir 1.png" alt="banniere titre" />
+          <h1>Horaire de la semaine</h1>
         </div>
         <div class="line"></div>
         <div class="bottom">
-            <ul>
-                <li>Dimanche</li>
-                <li>Lundi</li>
-                <li>Mardi</li>
-                <li>Mercredi</li>
-                <li>Jeudi</li>
-                <li>Vendredi</li>
-                <li>Samedi</li>
-            </ul>
-            <ul>
-                <li>6H-13H</li>
-                <li>6H-20H</li>
-                <li>6H-20H</li>
-                <li>6H-20H</li>
-                <li>6H-21H</li>
-                <li>6H-21H</li>
-                <li>6H-21H</li>
-            </ul>
+          <ul>
+            <li>Dimanche</li>
+            <li>Lundi</li>
+            <li>Mardi</li>
+            <li>Mercredi</li>
+            <li>Jeudi</li>
+            <li>Vendredi</li>
+            <li>Samedi</li>
+          </ul>
+          <ul>
+            <li>6H-13H</li>
+            <li>6H-20H</li>
+            <li>6H-20H</li>
+            <li>6H-20H</li>
+            <li>6H-21H</li>
+            <li>6H-21H</li>
+            <li>6H-21H</li>
+          </ul>
+          <img src="./img/horaire.png" alt="image" />
         </div>
         <div class="line"></div>
-    </section>
-    <!-- #endregion -->
-</body>
-</html>
+      </section>
+      <!-- #endregion -->
+      <!--#region             Nos Menus  -->
+      <section id="nosmenu">
+        <div class="nosmenu__title">
+          <img src="./img/ligne noir 1.png" alt="banniere titre" />
+          <h2>Nos Menus</h2>
+        </div>
 
-<script>
+        <div class="nosmenu__content--menus">
+          <div class="imgBox">
+            <img src="./img/menu_dejeuner.png" alt="menu dejeuner" />
+          </div>
+          <div class="textBox">
+            <h3>Dejeuner</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Similique quos, fugiat eius laboriosam dignissimos, unde
+              consectetur reprehenderit atque consequuntur molestias voluptates
+              maiores dicta libero ut?
+            </p>
+            <button>Voir le menu</button>
+          </div>
+        </div>
 
+        <div class="nosmenu__content--menus">
+          <div class="textBox">
+            <h3>Menu principale</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Similique quos, fugiat eius laboriosam dignissimos, unde
+              consectetur reprehenderit atque consequuntur molestias voluptates
+              maiores dicta libero ut?
+            </p>
+            <button>Voir le menu</button>
+          </div>
+          <div class="imgBox">
+            <img src="./img/menu_dejeuner.png" alt="menu dejeuner" />
+          </div>
+        </div>
+
+        <div class="nosmenu__content--menus">
+          <div class="imgBox">
+            <img src="./img/menu_dejeuner.png" alt="menu dejeuner" />
+          </div>
+          <div class="textBox">
+            <h3>désserts</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Similique quos, fugiat eius laboriosam dignissimos, unde
+              consectetur reprehenderit atque consequuntur molestias voluptates
+              maiores dicta libero ut?
+            </p>
+            <button>Voir le menu</button>
+          </div>
+        </div>
+
+        <div class="nosmenu__content--menus">
+          <div class="textBox">
+            <h3>Alcool</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Similique quos, fugiat eius laboriosam dignissimos, unde
+              consectetur reprehenderit atque consequuntur molestias voluptates
+              maiores dicta libero ut?
+            </p>
+            <button>Voir le menu</button>
+          </div>
+          <div class="imgBox">
+            <img src="./img/menu_dejeuner.png" alt="menu dejeuner" />
+          </div>
+        </div>
+      </section>
+      <!-- #endregion -->
+    </main>
+  </body>
+
+  <script>
     const menu = document.querySelector(".toggle");
     const nav = document.querySelector(".nav");
 
-    menu.addEventListener("click", function(){
-        nav.classList.toggle("active");
-        menu.classList.toggle("active");
-    })
-
-
-
-    
-
-
-</script>
+    menu.addEventListener("click", function () {
+      nav.classList.toggle("active");
+      menu.classList.toggle("active");
+    });
+  </script>
+</html>
