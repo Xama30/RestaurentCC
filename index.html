@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -47,12 +47,42 @@
       </section>
       <!-- #endregion -->
       <!--#region             Horaire -->
-      <section class="horaire">
-        <div class="top">
-         <!-- <img src="./img/ligne noir 1.png" alt="banniere titre" /> -->
+      <section id="horaire">
+      <div class="top">
           <h1>Horaire de la semaine</h1>
+      </div>
+      <div class="bottom">
+          <div class="horaire">
+            <div class="ligne"></div>
+            <div class="container">
+              <div class="droite">
+                <ul>
+                  <li>Dimanche</li>
+                  <li>Lundi</li>
+                  <li>Mardi</li>
+                  <li>Mercredi</li>
+                  <li>Jeudi</li>
+                  <li>Vendredi</li>
+                  <li>Samedi</li>
+                </ul>
+              </div>
+              <div class="gauche">
+                <ul>
+                  <li>6H - 21H</li>
+                  <li>6H - 21H</li>
+                  <li>6H - 21H</li>
+                  <li>6H - 21H</li>
+                  <li>6H - 21H</li>
+                  <li>6H - 21H</li>
+                  <li>6H - 21H</li>
+                </ul>
+            </div>
+          </div>
+          <div class="ligne"></div>
         </div>
-        <div class="line"></div>
+      </div>
+
+        <!--<div class="line"></div>
         <div class="bottom">
           <ul>
             <li>Dimanche</li>
@@ -74,13 +104,12 @@
           </ul>
           <img src="./img/horaire.png" alt="image" />
         </div>
-        <div class="line"></div>
+        <div class="line"></div> -->
       </section>
       <!-- #endregion -->
       <!--#region             Nos Menus  -->
       <section id="nosmenu">
         <div class="nosmenu__title">
-          <img src="./img/ligne noir 1.png" alt="banniere titre" />
           <h2>Nos Menus</h2>
         </div>
         <div class="container">
@@ -157,7 +186,7 @@
           <h2>Évènements</h2>
         </div>
         <div class="container">
-          <h1 class="date">17 mars 2023</h1>
+          <h1 class="date"></h1>
           <div class="image">
             <img src="./img/evenement.png" alt="evenement">
           </div>
@@ -205,6 +234,14 @@
       menu.classList.toggle("active");
     });
   </script>
+  
+  <script type="module">
+    import dateJSON from './resources/date.json' assert {type: 'json'};
+    
+    const dateTextField = document.querySelector(".date");
+    dateTextField.innerHTML = dateJSON.date;
+  </script>
+
 
   <!-- Font Awesome -->
   <script

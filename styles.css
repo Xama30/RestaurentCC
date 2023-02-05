@@ -127,72 +127,71 @@ section.acceuil .container img {
 }
 /* #endregion */
 /*#region           Horaire */
-section.horaire {
-  /* background-image: url(./img/horaire.png); */
-  background: linear-gradient(
-    rgb(22, 22, 22),
-    rgb(43, 43, 43),
-    rgba(22, 22, 22)
-  );
+#horaire {
+  background-image: url(./img/fondHoraire.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 10rem 0;
 }
-section.horaire .top {
-  position: absolute;
+#horaire .top {
+  position: relative;
   width: 100%;
-  height: calc(5rem + 9vmax);
+  height: calc(4rem + 8vmax);
   display: flex;
   justify-content: center;
   align-items: center;
-  top: -10vh;
   background-color: #000;
 }
-section.horaire .top img {
-  width: 100%;
-  height: 100%;
-}
-section.horaire .top h1 {
+#horaire .top h1 {
   position: absolute;
   color: white;
   font-family: "Parisienne", cursive;
-  font-size: calc(2rem + 3vh);
+  font-size: calc(1.5rem + 3vmax);
 }
-section.horaire .bottom {
+#horaire .bottom {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
 }
-section.horaire .bottom img {
-  width: calc(20rem + 30vw);
-  flex-shrink: 0;
+#horaire .horaire{
+  width: 45%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  margin: calc(5rem + 5vmin) calc(10rem + 10vmin);
+  padding: calc(2rem + 2vmin);
 }
-section.horaire .bottom li {
+#horaire .ligne{
+  position: relative;
+  height: 4px;
+  width: 100%;
+  background-color: #a05d21;
+  margin: calc(3rem + 3vh) 0;
+  z-index: 2;
+}
+#horaire .container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#horaire .bottom li {
   list-style: none;
   color: white;
-  font-size: calc(1rem + 1.75vh);
-  margin: calc(1rem + 0.75vh);
+  font-size: calc(1.2rem + 1.7vmin);
+  margin: calc(1.5rem + 1vh);
 }
-section.horaire .line {
-  margin: calc(1rem + 3vh);
-  height: 2px;
-  width: 80%;
-  background-color: rgb(188, 128, 74);
-  align-self: center;
-}
+
 /* #endregion */
 /*#region           Nos Menus  */
 #nosmenu {
   position: relative;
-  padding: 17rem 10rem;
   background: url(./img/menu_bg.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
   /*   display: flex;
   align-items: center;
   justify-content: center; */
@@ -213,14 +212,14 @@ section.horaire .line {
   place-items: center;
 }
 #nosmenu .nosmenu__title {
-  position: absolute;
-  top: -10vh;
+  position: relative;
   left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
-  height: calc(5rem + 10vmax);
+  height: calc(4rem + 8vmax);
   overflow: hidden;
+  background-color: #000;
 }
 #nosmenu .nosmenu__title h2 {
   position: absolute;
@@ -301,12 +300,11 @@ section.horaire .line {
   position: relative;
 }
 #evenement .evenement__title{
-  position: absolute;
-  top: -10vh;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(5rem + 9vmax);
+  height: calc(4rem + 8vmax);
   width: 100%;
   background-color: #000;
 }
@@ -319,7 +317,7 @@ section.horaire .line {
   color: white;
   z-index: 1;
   font-family: 'Parisienne', cursive;
-  font-size: calc(2rem + 3vh);
+  font-size: calc(1.5rem + 3vmax);
 }
 #evenement .container{
   height: 50%;
@@ -334,7 +332,7 @@ section.horaire .line {
   color: rgb(255, 255, 255);
   font-size: calc(2rem + 3.5vmin);
   font-family: 'Roboto', sans-serif;
-  margin: calc(5rem + 5vmin) 0;
+  margin-bottom: calc(5rem + 5vmin);
   align-self: center;
 }
 #evenement .container img{
