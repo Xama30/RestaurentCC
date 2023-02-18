@@ -57,7 +57,7 @@
       <!--#region             Horaire -->
       <section id="horaire">
       <div class="top">
-          <h1>Horaire de la semaine</h1>
+          <h2>Horaire de la semaine</h2>
       </div>
       <div class="bottom">
           <div class="horaire">
@@ -88,9 +88,9 @@
           </div>
           <div class="ligne"></div>
         </div>
-        <div class="bouton">
-          <a class="bouton1" href=""><div>Menu de la semaine</div></a>
-          <a class="bouton1" href=""><div>Table d'hôte</div></a> 
+        <div class="bouton__container">
+          <a class="bouton bouton1" href=""><div>Menu de la semaine</div></a>
+          <a class="bouton bouton2" href=""><div>Table d'hôte</div></a> 
         </div>
       </div>
 
@@ -120,96 +120,46 @@
       </section>
       <!-- #endregion -->
       <!--#region             Nos Menus  -->
+
       <section id="nosmenu">
+        <!-- =-=-=-= Menu =-=-=-=- -->
         <div class="nosmenu__title">
-          <h2>Nos Menus</h2>
+            <h2>Nos menus</h2>
         </div>
-        <div class="container">
-          <div class="nosmenu__content--menus">
-            <div class="imgBox">
-              <img src="./img/menu_dejeuner.png" alt="menu dejeuner" />
-            </div>
-            <div class="textBox">
-              <h3>Dejeuner</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Similique quos, fugiat eius laboriosam dignissimos, unde
-                consectetur reprehenderit atque consequuntur molestias voluptates
-                maiores dicta libero ut?
-              </p>
-              <button onclick="document.location.href='dejeuner.html#dejeuner'">Voir le menu</button>
-            </div>
+
+        <div class="nosmenu__content">
+
+          <div class="cards-menu">
+            <img src="./img/dejeuner.jpg" alt="Menu Déjeuner">
+            <p class="menu-title">Déjeuner</p>
+            <p>Notre menu de déjeuner offre une variété de plats légers et délicieux qui sauront combler votre faim et vous recharger pour le reste de la journée.</p>
+            <a href="dejeuner.html">Voir le menu</a>
           </div>
-  
-          <div class="nosmenu__content--menus">
-            <div class="imgBox">
-              <img src="./img/menu_dejeuner.png" alt="menu dejeuner" />
-            </div>
-            <div class="textBox">
-              <h3>Menu principale</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Similique quos, fugiat eius laboriosam dignissimos, unde
-                consectetur reprehenderit atque consequuntur molestias voluptates
-                maiores dicta libero ut?
-              </p>
-              <button onclick="document.location.href='principale.html#principale'">Voir le menu</button>
-            </div>
+
+          <div class="cards-menu middle">
+            <img src="./img/principale.jpg" alt="Menu Principale">
+            <p class="menu-title">Menu Principale</p>
+            <p>Découvrez notre menu savoureux qui met en avant les ingrédients frais et de qualité, préparés avec passion pour vous offrir une expérience culinaire inoubliable.</p>
+            <a href="principale.html">Voir le menu</a>
           </div>
-  
-          <!-- <div class="nosmenu__content--menus">
-            <div class="imgBox">
-              <img src="./img/menu_dejeuner.png" alt="menu dejeuner" />
-            </div>
-            <div class="textBox">
-              <h3>désserts</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Similique quos, fugiat eius laboriosam dignissimos, unde
-                consectetur reprehenderit atque consequuntur molestias voluptates
-                maiores dicta libero ut?
-              </p>
-              <button>Voir le menu</button>
-            </div>
+
+          <div class="cards-menu">
+            <img src="./img/alcool.jpg" alt="Menu Alcool">
+            <p class="menu-title">Alcools</p>
+            <p>venez découvrir notre sélection raffinée d'alcools soigneusement choisis pour accompagner vos plats et éveiller vos papilles</p>
+            <a href="alcool.html">Voir le menu</a>
           </div>
-          -->
-          <div class="nosmenu__content--menus">
-            <div class="imgBox">
-              <img src="./img/menu_dejeuner.png" alt="menu dejeuner" />
-            </div>
-            <div class="textBox">
-              <h3>Alcool</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Similique quos, fugiat eius laboriosam dignissimos, unde
-                consectetur reprehenderit atque consequuntur molestias voluptates
-                maiores dicta libero ut?
-              </p>
-              <button>Voir le menu</button>
-            </div>
-          </div>
+
         </div>
-      </section>
-      <!-- #endregion -->
-      <!--#region             Evenement -->
-      <!--<section id="evenement">
-        <div class="evenement__title">
-          <h2>Évènements</h2>
-        </div>
-        <div class="container">
-          <h1 class="date"></h1>
-          <div class="image">
-            <img src="./img/evenement.png" alt="evenement">
+        <!-- -=-=-=-= Table d'hote =-=-=-=- -->
+        <div class="containerTop">
+          <div class="top">
+            <h2>Table d'hôte</h2>
           </div>
-        </div>
-      </section> -->
-      <section id="tranding">
-        <div class="top">
-          <h1>Horaire de la semaine</h1>
         </div>
         <div class="container bot1">
-          <h3 class="text-center section-subheading">- popular Delivery -</h3>
-          <h1 class="text-center section-heading">Tranding food</h1>
+          <p class="text-center section-subheading">- Servie avec soupe et breuvage -</p>
+          <h2 class="text-center section-heading">Choisissez votre assiette</h2>
         </div>
         <div class="container">
           <div class="swiper tranding-slider">
@@ -220,21 +170,13 @@
                   <img src="./img/tranding-food-1.png" alt="Tranding">
                 </div>
                 <div class="tranding-slide-content">
-                  <h1 class="food-price">$20</h1>
+                  <h2 class="food-price">$20</h2>
                   <div class="tranding-slide-content-bottom">
                     <h2 class="food-name">
                       Special Pizza
                     </h2>
-                    <h3 class="food-rating">
-                      <span>4.5</span>
-                      <div class="rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                      </div>
-                    </h3>
+                    <p class="food-rating">
+                    </p>
                   </div>
                 </div>
               </div>
@@ -245,21 +187,13 @@
                   <img src="./img/tranding-food-2.png" alt="Tranding">
                 </div>
                 <div class="tranding-slide-content">
-                  <h1 class="food-price">$20</h1>
+                  <h2 class="food-price">$20</h2>
                   <div class="tranding-slide-content-bottom">
                     <h2 class="food-name">
                       Meat Ball
                     </h2>
-                    <h3 class="food-rating">
-                      <span>4.5</span>
-                      <div class="rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                      </div>
-                    </h3>
+                    <p class="food-rating">
+                    </p>
                   </div>
                 </div>
               </div>
@@ -270,21 +204,12 @@
                   <img src="./img/tranding-food-3.png" alt="Tranding">
                 </div>
                 <div class="tranding-slide-content">
-                  <h1 class="food-price">$40</h1>
+                  <h2 class="food-price">$40</h2>
                   <div class="tranding-slide-content-bottom">
                     <h2 class="food-name">
                       Burger
                     </h2>
-                    <h3 class="food-rating">
-                      <span>4.5</span>
-                      <div class="rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                      </div>
-                    </h3>
+                    <p class="food-rating"></p>
                   </div>
                 </div>
               </div>
@@ -295,21 +220,12 @@
                   <img src="./img/tranding-food-4.png" alt="Tranding">
                 </div>
                 <div class="tranding-slide-content">
-                  <h1 class="food-price">$15</h1>
+                  <h2 class="food-price">$15</h2>
                   <div class="tranding-slide-content-bottom">
                     <h2 class="food-name">
                       Frish Curry
                     </h2>
-                    <h3 class="food-rating">
-                      <span>4.5</span>
-                      <div class="rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                      </div>
-                    </h3>
+                    <p class="food-rating"></p>
                   </div>
                 </div>
               </div>
@@ -320,21 +236,12 @@
                   <img src="./img/tranding-food-5.png" alt="Tranding">
                 </div>
                 <div class="tranding-slide-content">
-                  <h1 class="food-price">$15</h1>
+                  <h2 class="food-price">$15</h2>
                   <div class="tranding-slide-content-bottom">
                     <h2 class="food-name">
                       Pane Cake
                     </h2>
-                    <h3 class="food-rating">
-                      <span>4.5</span>
-                      <div class="rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                      </div>
-                    </h3>
+                    <p class="food-rating"></p>
                   </div>
                 </div>
               </div>
@@ -345,21 +252,12 @@
                   <img src="./img/tranding-food-6.png" alt="Tranding">
                 </div>
                 <div class="tranding-slide-content">
-                  <h1 class="food-price">$20</h1>
+                  <h2 class="food-price">$20</h2>
                   <div class="tranding-slide-content-bottom">
                     <h2 class="food-name">
                       Vanilla cake
                     </h2>
-                    <h3 class="food-rating">
-                      <span>4.5</span>
-                      <div class="rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                      </div>
-                    </h3>
+                    <p class="food-rating"></p>
                   </div>
                 </div>
               </div>
@@ -370,21 +268,12 @@
                   <img src="./img/tranding-food-7.png" alt="Tranding">
                 </div>
                 <div class="tranding-slide-content">
-                  <h1 class="food-price">$8</h1>
+                  <h2 class="food-price">$8</h2>
                   <div class="tranding-slide-content-bottom">
                     <h2 class="food-name">
                       Straw Cake
                     </h2>
-                    <h3 class="food-rating">
-                      <span>4.5</span>
-                      <div class="rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                      </div>
-                    </h3>
+                    <p class="food-rating"></p>
                   </div>
                 </div>
               </div>
@@ -431,6 +320,91 @@
           </footer>
         </section>
       </section>
+      <!--<section id="nosmenu">
+        <div class="nosmenu__title">
+          <h2>Nos Menus</h2>
+        </div>
+        <div class="container">
+          <div class="nosmenu__content--menus">
+            <div class="imgBox">
+              <img src="./img/menu_dejeuner.png" alt="menu dejeuner" />
+            </div>
+            <div class="textBox">
+              <p>Dejeuner</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Similique quos, fugiat eius laboriosam dignissimos, unde
+                consectetur reprehenderit atque consequuntur molestias voluptates
+                maiores dicta libero ut?
+              </p>
+              <button onclick="document.location.href='dejeuner.html#dejeuner'">Voir le menu</button>
+            </div>
+          </div>
+  
+          <div class="nosmenu__content--menus">
+            <div class="imgBox">
+              <img src="./img/menu_dejeuner.png" alt="menu dejeuner" />
+            </div>
+            <div class="textBox">
+              <p>Menu principale</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Similique quos, fugiat eius laboriosam dignissimos, unde
+                consectetur reprehenderit atque consequuntur molestias voluptates
+                maiores dicta libero ut?
+              </p>
+              <button onclick="document.location.href='principale.html#principale'">Voir le menu</button>
+            </div>
+          </div>
+  
+          <div class="nosmenu__content--menus">
+            <div class="imgBox">
+              <img src="./img/menu_dejeuner.png" alt="menu dejeuner" />
+            </div>
+            <div class="textBox">
+              <p>désserts</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Similique quos, fugiat eius laboriosam dignissimos, unde
+                consectetur reprehenderit atque consequuntur molestias voluptates
+                maiores dicta libero ut?
+              </p>
+              <button>Voir le menu</button>
+            </div>
+          </div>
+          
+          <div class="nosmenu__content--menus">
+            <div class="imgBox">
+              <img src="./img/menu_dejeuner.png" alt="menu dejeuner" />
+            </div>
+            <div class="textBox">
+              <p>Alcool</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Similique quos, fugiat eius laboriosam dignissimos, unde
+                consectetur reprehenderit atque consequuntur molestias voluptates
+                maiores dicta libero ut?
+              </p>
+              <button>Voir le menu</button>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- #endregion -->
+      <!--#region             Evenement -->
+      <!--<section id="evenement">
+        <div class="evenement__title">
+          <h2>Évènements</h2>
+        </div>
+        <div class="container">
+          <h2 class="date"></h2>
+          <div class="image">
+            <img src="./img/evenement.png" alt="evenement">
+          </div>
+        </div>
+      </section> -->
+      <section id="tranding">
+        
   
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
