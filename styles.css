@@ -385,7 +385,7 @@ background: var(--secondary-color-);
   align-items: center;
 }
 #nosmenu .container.bot1{
-  margin-top: 7rem;
+  margin-top: 2rem;
 }
 #nosmenu .top h2 {
   position: absolute !important;
