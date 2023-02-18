@@ -241,7 +241,7 @@ section.accueil .container img {
 .nosmenu__content {
   display: flex;
   justify-content: space-around;
-  padding: 10rem 13rem;
+  padding: 10rem 13rem 0;
   flex-wrap: wrap;
 }
 .nosmenu__content .cards-menu {
@@ -383,7 +383,6 @@ background: var(--secondary-color-);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
 }
 #nosmenu .container.bot1{
   margin-top: 7rem;
